@@ -22,7 +22,7 @@
         menu.classList.remove('header__nav_active');
     });
     if (window.innerWidth <= 767) {
-        for (let i = 0; i < menuLinks.length; i += 1) {
+        for (let i = 0; i < menuLinks.length; i++ ) {
             menuLinks[i].addEventListener('click', () => {
                 menu.classList.remove('header__nav_active');
             });
