@@ -13,29 +13,29 @@
 </head>
 
 <body>
-<!-- Header start -->
+	<!-- Header start -->
 	<header class="header">
 		<div class="wrapper">
 			<div class="header__wrapper">
 				<div class="header__logo">
-					<a href="/" class="header__logo-link">
-						<h1 class="header__logo-text">LiveLonger</h1>
+					<a href="#sign-in" class="header__logo-link js-scroll">
+						<h1 class="header__logo-text">Portfolio</h1>
 					</a>
 				</div>
 
 				<nav class="header__nav">
 					<ul class="header__list">
-						<li class="header__item"><a href="#articles" class="header__link">Зачем?</a></li>
-						<li class="header__item"><a href="#locations" class="header__link">Locations</a></li>
-						<li class="header__item"><a href="#videos" class="header__link">Videos</a></li>
-						<li class="header__item"><a href="#sign-in" class="header__link">Sign in</a></li>
+						<li class="header__item"><a href="#articles" class="header__link js-scroll">About me</a></li>
+						<li class="header__item"><a href="#locations" class="header__link js-scroll">Locations</a></li>
+						<li class="header__item"><a href="#projects" class="header__link js-scroll">Projects</a></li>
+						<li class="header__item"><a href="/join.html" class="header__link js-scroll">Contact me</a></li>
 					</ul>
 					<div class="header__nav-close">
 						<span class="header__nav-close-line"></span>
 						<span class="header__nav-close-line"></span>
 					</div>
 				</nav>
-				<div class="header__burger burger" >
+				<div class="header__burger burger">
 					<span class="burger__line burger__line_first"></span>
 					<span class="burger__line burger__line_second"></span>
 					<span class="burger__line burger__line_third"></span>
@@ -52,414 +52,392 @@
 		<section class="intro" id="sign-in">
 			<div class="wrapper">
 				<h1 class="intro__title">
-					Генератор идей для создания воспоминаний
+					Домашняя страница Павла Щербакова
 				</h1>
 				<p class="intro__subtitle">
-					Не ленитесь и не бойтесь пробовать новое.
+					Здесь вы можете кратко ознакомиться с моим бекграундом
 				</p>
-				<form class="search-form">
-					<fieldset class="search-form__wrap">
-						<p class="search-form__info">
-							<input type="text" name="people-quantity" class="search-form__field"
-								placeholder="Вид активности">
-							<input type="text" name="location" list="list"class="search-form__field"
-								placeholder="Город, область, страна">
-								<datalist id="list">
-									<option value="Москва">
-									<option value="Калининград">
-									<option value="Дагестан">
-								</datalist>
-							<input type="text" name="people-quantity" class="search-form__field"
-								placeholder="Количество людей">
-							<input type="text" name="money-quantity" class="search-form__field"
-								placeholder="Сумма денег">
-							<input type="text" name="user-like-to-go" class="search-form__field"
-								placeholder="Свободное время">
-						</p>
-						<button type="submit" class="search-form__submit">Жмяк</button>
-					</fieldset>
-				</form>
 			</div>
 		</section>
 		<!-- Intro end -->
 
-		<!-- Benefits start -->
-		<section class="benefits">
-			<div class="benefits__wrap">
-				<h2 class="benefits__title">Benefits of Odigo</h2>
-				<div class="benefits__cards">
-					<div class="benefits__card">
-						<div class="benefits__card-pic">
-							<img src="./img/svg/temple-ico.svg" alt="Welcome to Odigo!" class="benefits__card-thumb">
+		<!-- facts start -->
+		<section class="facts">
+			<div class="facts__wrap">
+				<h2 class="facts__title">Интересные факты</h2>
+				<div class="facts__cards">
+					<div class="facts__card">
+						<div class="facts__card-pic">
+							<img src="./img/svg/temple-ico.svg" alt="Welcome to Odigo!" class="facts__card-thumb">
 						</div>
-						<h3 class="benefits__card-title">Welcome to Odigo!</h3>
-						<p class="benefits__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+						<h3 class="facts__card-title">Путешественник</h3>
+						<p class="facts__card-desc">
+							Проехал 10 тысяч км автостопом за 3 недели. Путешествовал по Грузии, Турции, Кавказу.
 						</p>
-						<a href="#!" class="benefits__card-more">LEARN MORE</a>
+						<a href="https://hitchwiki.org/ru/" target="_blank" class="facts__card-more">LEARN MORE</a>
 					</div>
-					<div class="benefits__card">
-						<div class="benefits__card-pic">
-							<img src="./img/svg/person-ico.svg" alt="Your Personal Japan Guide" class="benefits__card-thumb">
+					<div class="facts__card">
+						<div class="facts__card-pic">
+							<img src="./img/svg/person-ico.svg" alt="Your Personal Japan Guide" class="facts__card-thumb">
 						</div>
-						<h3 class="benefits__card-title">Your Personal Japan Guide</h3>
-						<p class="benefits__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+						<h3 class="facts__card-title">Студент</h3>
+						<p class="facts__card-desc">
+							Являюсь участником основного обучения Школы 21.
 						</p>
-						<a href="#!" class="benefits__card-more">LEARN MORE</a>
+						<a href="https://21-school.ru/" target="_blank" class="facts__card-more">LEARN MORE</a>
 					</div>
-					<div class="benefits__card">
-						<div class="benefits__card-pic">
-							<img src="./img/svg/building-ico.svg" alt="Promoting Local Businesses" class="benefits__card-thumb">
+					<div class="facts__card">
+						<div class="facts__card-pic">
+							<img src="./img/svg/blue_castle.svg" alt="Promoting Local Businesses" id="kaliningrad-ico"
+								class="facts__card-thumb">
 						</div>
-						<h3 class="benefits__card-title">Promoting Local Businesses</h3>
-						<p class="benefits__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+						<h3 class="facts__card-title">Калининградец</h3>
+						<p class="facts__card-desc">
+							Родился и вырос в Калининграде, знаю регион от корки до корки.
 						</p>
-						<a href="#!" class="benefits__card-more">LEARN MORE</a>
+						<a href="https://pogoda.turtella.ru/russia/zelenogradsk/sea_temperature" target="_blank"
+							class="facts__card-more">LEARN MORE</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Benefits end -->
+		<!-- facts end -->
 
-		<!-- Places start -->
 
-		<section class="places">
+		<!-- About me start -->
+		<section class="tours">
 			<div class="wrapper-full">
-				<div class="places__caption">
-					<h2 class="places__title section-title">
-						Get inspired for your next trip
-					</h2>
-					<a href="#!" class="places__view-all">VIEW ALL</a>
-				</div>
-				<div class="places__cards">
 
-					<figure class="places__card places__card_size_lg">
-						<img src="./img/place-1.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic_size_lg">
-						<figcaption class="places__card-title">
-							Mount Fuji
-						</figcaption>
-						<a href="#!" class="places__card-link"></a>
-					</figure>
-
-					<figure class="places__card places__card_size_lg">
-						<img src="./img/place-2.jpg" alt="Kyoto" class="places__card-pic places__card-pic_size_lg">
-						<figcaption class="places__card-title">
-							Kyoto
-						</figcaption>
-						<a href="#!" class="places__card-link"></a>
-					</figure>
-
-					<figure class="places__card places__card_size_sm">
-						<img src="./img/place-3.jpg" alt="Tokyo" class="places__card-pic places__card-pic_size_sm">
-						<figcaption class="places__card-title">
-							Tokyo
-						</figcaption>
-						<a href="#!" class="places__card-link"></a>
-					</figure>
-
-					<figure class="places__card places__card_size_sm">
-						<img src="./img/place-4.jpg" alt="Niigata" class="places__card-pic places__card-pic_size_sm">
-						<figcaption class="places__card-title">
-							Niigata
-						</figcaption>
-						<a href="#!" class="places__card-link"></a>
-					</figure>
-
-					<figure class="places__card places__card_size_sm">
-						<img src="./img/place-5.jpg" alt="Sapporo" class="places__card-pic places__card-pic_size_sm">
-						<figcaption class="places__card-title">
-							Sapporo
-						</figcaption>
-						<a href="#!" class="places__card-link"></a>
-					</figure>
-
-				</div>
-			</div>
-		</section>
-		<!-- Places end -->
-
-		<!-- Tours start -->
-
-		<div class="tours">
-			<div class="wrapper-full">
-			
-				<div class="tours__tour tour">
+				<article class="tours__tour tour">
 					<div class="tour__info" id="articles">
 						<h3 class="tour__title">
-							Зачем нужен этот сайт?
+							About me
 						</h3>
 						<p class="tour__desc">
-							Этот сайт нужен для того, чтобы не ломать голову, как провести выходные или отпуск, да так, чтобы это запомнилось. Здесь можно найти уже испытанные людьми варианты, как провести свободные деньки, а также поделиться своими вариантами.
+							Добро пожаловать на мой сайт! Я родился и вырос в Калининграде, последние 5 лет жил в Москве и
+							Калининграде. Учусь в МАДИ на направлении "Прикладная Математика". Люблю решать задачи, будто
+							разгадать кроссворд или написать программу. Был во многих туристических местах России и ближнего
+							зарубежья, влюблен в Балтийское побережье и Кавказские горы. Пишу код, играю на гитаре, люблю
+							историю и купаться.
 						</p>
 						<a href="#!" class="tour__more">VIEW NEIGHBORHOOD</a>
 					</div>
 					<div class="tour__pic tour__pic_mobile-first">
-						<img src="./img/tour-2(2).jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
+						<img src="./img/aboutMe1.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
 					</div>
 
-				</div>
-				<div class="tours__tour tour">
+				</article>
+				<article class="tours__tour tour">
 					<div class="tour__pic">
 						<img src="./img/tour-1(1).jpg" alt="Prefecture in Focus: Tottori" class="tour__thumb">
 					</div>
 					<div class="tour__info">
 						<h3 class="tour__title">
-							Философия сайта
+							Мои компетенции в ИТ:
 						</h3>
 						<p class="tour__desc">
-							Чем старше становишься, тем быстрее мимо тебя пролетают дни. Почему так? Почему неделя, проведённая в путешествии, вспоминается как маленькая жизнь, а месяц, прожитый в рутине, пролетает незаметно? Я, тобишь создатель сайта, вижу такой ответ на эти вопросы: "протяжённость" жизни зависит от количества запоминающихся событий, которые успели в ней произойти. Соответственно, если мы хотим пожить подольше, нам нужно заботиться не только о продолжительности жизни, но в равной степени и о её наполненности вопспоминаниями. Как создать воспоминание? Как бы банально не звучало, нужно пробовать, смотреть, видеть, слышать, чувствовать то, чего ранее никогда не испытывал, в этом случае, мозг сделает усилие, чтобы запомнить новую, незнакомую ранее информацию. В детстве огромное количество новых ощущений, просто в силу неопытности, в то время как в старости вещи и события, которых не видел, не пробовал и не испытал всё меньше и меньше. Путешествия так хорошо запоминаются, т.к. повсюду огромное количество новой, неизвестной ранее мозгу информации, будто запахи, виды, масштабы, языки, культура, вкусы и прочее и прочее и прочее. Однако помимо путешествий, запоминания могут получится и из других активностей, будто поход в музей или подрыв фейерверка рядом. Главное, чтобы это было что-то необычное, новое или уникальное для вашего восприятия. Чем больше в жизни воспоминаний, тем более длинной она кажется и тем менее страшна смерть. 
-
+							C, Bash, Linux, JavaScript, Node.js, Java, HTML, CSS, Golang
+						</p>
+						<h3 class="tour__title">
+							Люблю:
+						</h3>
+						<p class="tour__desc">
+							Любую шоколадную продукцию и любые её производные, романы "Камо Грядеши" и "Доктор Живаго",
+							карабкаться по горам, провожать закаты на крышах, устраивать чайные церемонии, срываться в
+							авантюрные путешествия, решать сложные задачи.
+						</p>
+						<h3 class="tour__title">
+							Ненавижу:
+						</h3>
+						<p class="tour__desc">
+							Кабачки, тыкву, баклажаны и любые их производные, монотонный труд, малопроизводительные компьютеры,
+							когда курят рядом, дешёвый алкоголь, многопользовательские онлайн игры.
 						</p>
 						<a href="#!" class="tour__more">VIEW PREFECTURE</a>
 					</div>
 
+				</article>
+			</div>
+		</section>
+
+		<!-- About me end -->
+
+		<!-- Projects start -->
+
+		<section class="projects" id="projects">
+			<div class="wrapper-full">
+				<div class="projects__caption">
+					<h2 class="projects__title section-title">
+						Projects
+					</h2>
+					<a href="https://github.com/Regular-Pashka/" target="_blank" class="projects__view-all">VIEW ALL</a>
+				</div>
+				<div class="projects__cards">
+
+					<figure class="projects__card projects__card_size_lg">
+						<img src="./img/grep.png" alt="Grep" class="projects__card-pic projects__card-pic_size_lg">
+						<figcaption class="projects__card-title">
+							Grep
+						</figcaption>
+						<a href="https://github.com/Regular-Pashka/s21_catGrep/tree/master/src/grep" target="_blank"
+							class="projects__card-link"></a>
+					</figure>
+
+					<figure class="projects__card projects__card_size_lg">
+						<img src="./img/cat.png" alt="Cat" class="projects__card-pic projects__card-pic_size_lg">
+						<figcaption class="projects__card-title">
+							Cat
+						</figcaption>
+						<a href="https://github.com/Regular-Pashka/s21_catGrep/tree/master/src/cat" target="_blank"
+							class="projects__card-link"></a>
+					</figure>
+
+					<figure class="projects__card projects__card_size_sm">
+						<img src="./img/game_of_life.jpg" alt="Game_of_Life"
+							class="projects__card-pic projects__card-pic_size_sm">
+						<figcaption class="projects__card-title">
+							Game of life
+						</figcaption>
+						<a href="https://github.com/Regular-Pashka/s21_game_of_life" target="_blank"
+							class="projects__card-link"></a>
+					</figure>
+
+					<figure class="projects__card projects__card_size_sm">
+						<img src="./img/guitar.webp" alt="Aniclot" class="projects__card-pic projects__card-pic_size_sm">
+						<figcaption class="projects__card-title">
+							Guitar shop
+						</figcaption>
+						<a href="https://github.com/Regular-Pashka/Comp" target="_blank" class="projects__card-link"></a>
+					</figure>
+
+					<figure class="projects__card projects__card_size_sm">
+						<img src="./img/pong.jpg" alt="Pong" class="projects__card-pic projects__card-pic_size_sm">
+						<figcaption class="projects__card-title">
+							Pong
+						</figcaption>
+						<a href="https://github.com/Regular-Pashka/s21_pong" target="_blank" class="projects__card-link"></a>
+					</figure>
+
 				</div>
 			</div>
-		</div>
-		<!-- Tours end -->
+		</section>
+		<!-- Projects end -->
+
 
 		<!-- Top start -->
 		<section class="top" id="locations">
 			<div class="wrapper-full">
 				<h2 class="top__title section-title">
-					Today top places to visit
+					My top of places
 				</h2>
 				<div class="top__cards">
 
-					<!-- Nagoya card start -->
-					<div class="top__card">
+					<!-- SULAK card start -->
+					<article class="top__card">
 						<div class="top__card-pic">
-							<img src="./img/top-pic-1.jpg" alt="NAGOYA" class="top__card-thumb">
+							<img src="./img/sulak2.jpg" alt="SULAK" class="top__card-thumb">
 							<div class="top__card-stats">
 								<h3 class="top__card-title">
-									NAGOYA
+									Сулакский Каньон
 								</h3>
 								<div class="top__card-likes">
 									<span class="top-card-likes-value">
-										221
+										1
 									</span>
 								</div>
 								<div class="top__card-comments">
 									<span class="top__card-comments-value">
-										50
+										1885
 									</span>
 								</div>
 							</div>
 						</div>
 						<p class="top__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+							Самая красивая достопримечательность Дагестана, особенно красивый вид открывается в 2 км к югу от
+							посёлка Дубки.
 						</p>
-						<a href="#!" class="top__card-more">
+						<a href="https://maps.app.goo.gl/BG5gSZHyyHeBS7XU8" target="_blank" class="top__card-more">
 							SEE MORE
 						</a>
-					</div>
-					<!-- Nagoya card end -->
+					</article>
+					<!-- SULAK card end -->
 
-					<!-- NIIGATA card start -->
-					<div class="top__card">
+					<!-- TERIBERKA card start -->
+					<article class="top__card">
 						<div class="top__card-pic">
-							<img src="./img/top-pic-2.jpg" alt="NIIGATA" class="top__card-thumb">
+							<img src="./img/teriberka2.jpg" alt="TERIBERKA" class="top__card-thumb">
 							<div class="top__card-stats">
 								<h3 class="top__card-title">
-									NIIGATA
+									Териберка
 								</h3>
 								<div class="top__card-likes">
 									<span class="top-card-likes-value">
-										221
+										2
 									</span>
 								</div>
 								<div class="top__card-comments">
 									<span class="top__card-comments-value">
-										50
+										2037
 									</span>
 								</div>
 							</div>
 						</div>
 						<p class="top__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+							Бывалые путешественники говорят, что места эти похожи на Огненную Землю в Аргентине. Местные же
+							советуют ехать во второй половине июля, когда сопки усеяны разными ягодами. Я был тут зимой за
+							северным сиянием.
 						</p>
-						<a href="#!" class="top__card-more">
+						<a href="https://maps.app.goo.gl/gZd43b9DuTiDPUui7" target="_blank" class="top__card-more">
 							SEE MORE
 						</a>
-					</div>
-					<!-- NIIGATA card end -->
-					
-					<!-- OSAKA card start -->
-					<div class="top__card">
-						<div class="top__card-pic">
-							<img src="./img/top-pic-3.jpg" alt="OSAKA" class="top__card-thumb">
-							<div class="top__card-stats">
-								<h3 class="top__card-title">
-									OSAKA
-								</h3>
-								<div class="top__card-likes">
-									<span class="top-card-likes-value">
-										221
-									</span>
-								</div>
-								<div class="top__card-comments">
-									<span class="top__card-comments-value">
-										50
-									</span>
-								</div>
-							</div>
-						</div>
-						<p class="top__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-						</p>
-						<a href="#!" class="top__card-more">
-							SEE MORE
-						</a>
-					</div>
-					<!-- OSAKA card end -->
-					
-					<!-- SAITAMA card end -->
-					<div class="top__card">
-						<div class="top__card-pic">
-							<img src="./img/top-pic-4.jpg" alt="SAITAMA" class="top__card-thumb">
-							<div class="top__card-stats">
-								<h3 class="top__card-title">
-									SAITAMA
-								</h3>
-								<div class="top__card-likes">
-									<span class="top-card-likes-value">
-										221
-									</span>
-								</div>
-								<div class="top__card-comments">
-									<span class="top__card-comments-value">
-										50
-									</span>
-								</div>
-							</div>
-						</div>
-						<p class="top__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-						</p>
-						<a href="#!" class="top__card-more">
-							SEE MORE
-						</a>
-					</div>
-					<!-- SAITAMA card end -->
+					</article>
+					<!-- TERIBERKA card end -->
 
-					<!-- UENO card end -->
-					<div class="top__card">
+					<!-- Cappadocia card start -->
+					<article class="top__card">
 						<div class="top__card-pic">
-							<img src="./img/top-pic-5.jpg" alt="UENO" class="top__card-thumb">
+							<img src="./img/cappadocia.jpg" alt="Cappadocia" class="top__card-thumb">
 							<div class="top__card-stats">
 								<h3 class="top__card-title">
-									UENO
+									Каппадокия
 								</h3>
 								<div class="top__card-likes">
 									<span class="top-card-likes-value">
-										221
+										3
 									</span>
 								</div>
 								<div class="top__card-comments">
 									<span class="top__card-comments-value">
-										50
+										3128
 									</span>
 								</div>
 							</div>
 						</div>
 						<p class="top__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+							Самая красивая часть Турции на мой взгляд, каждый день на рассвете, в 5-6 утра летом, в небо
+							вздымаются около сотни воздушных шаров, красивое зрелище. Пейзаж напоминает пустынные планеты из
+							звёздных войн, ноги постоянно царапают колючки.
 						</p>
-						<a href="#!" class="top__card-more">
+						<a href="https://maps.app.goo.gl/t5vzJcYfF8cUcJ9w9" target="_blank" class="top__card-more">
 							SEE MORE
 						</a>
-					</div>
-					<!-- UENO card end -->
+					</article>
+					<!-- Cappadocia card end -->
 
-					<!-- SHIBUYA card end -->
-					<div class="top__card">
+					<!-- KAZBEGI card end -->
+					<article class="top__card">
 						<div class="top__card-pic">
-							<img src="./img/top-pic-6.jpg" alt="SHIBUYA" class="top__card-thumb">
+							<img src="./img/Kazbegi+Cover.jpg" alt="KAZBEGI" class="top__card-thumb">
 							<div class="top__card-stats">
 								<h3 class="top__card-title">
-									SHIBUYA
+									Казбеги
 								</h3>
 								<div class="top__card-likes">
 									<span class="top-card-likes-value">
-										221
+										4
 									</span>
 								</div>
 								<div class="top__card-comments">
 									<span class="top__card-comments-value">
-										50
+										1809
 									</span>
 								</div>
 							</div>
 						</div>
 						<p class="top__card-desc">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+							Грузины уезжают сюда летом из Тбилиси спасаться от 40-ка градусной жары, здесь температура обычно
+							на 10-15 градусов ниже. Потрясающие виды на горы, чистый воздух, альпийские луга и грузинское
+							гостеприимство! Также рядом находится неописуемой красоты военная грузинская дорога.
 						</p>
-						<a href="#!" class="top__card-more">
+						<a href="https://maps.app.goo.gl/wvdyGyFo3JZ9BeVE8" target="_blank" class="top__card-more">
 							SEE MORE
 						</a>
-					</div>
-					<!-- SHIBUYA card end -->
+					</article>
+					<!-- KAZBEGI card end -->
+
+					<!-- TBILISI card end -->
+					<article class="top__card">
+						<div class="top__card-pic">
+							<img src="./img/tbilisi.webp" alt="TBILISI" class="top__card-thumb">
+							<div class="top__card-stats">
+								<h3 class="top__card-title">
+									Тбилиси
+								</h3>
+								<div class="top__card-likes">
+									<span class="top-card-likes-value">
+										5
+									</span>
+								</div>
+								<div class="top__card-comments">
+									<span class="top__card-comments-value">
+										1961
+									</span>
+								</div>
+							</div>
+						</div>
+						<p class="top__card-desc">
+							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being
+							gorgeous with belly side up i could pee on this.
+						</p>
+						<a href="https://maps.app.goo.gl/gScXL6J3YQopev6D9" target="_blank" class="top__card-more">
+							SEE MORE
+						</a>
+					</article>
+					<!-- TBILISI card end -->
+
+					<!-- BALTIC card end -->
+					<article class="top__card">
+						<div class="top__card-pic">
+							<img src="./img/baltic.jpg" alt="BALTIC" class="top__card-thumb">
+							<div class="top__card-stats">
+								<h3 class="top__card-title">
+									Балтийский берег
+								</h3>
+								<div class="top__card-likes">
+									<span class="top-card-likes-value">
+										6
+									</span>
+								</div>
+								<div class="top__card-comments">
+									<span class="top__card-comments-value">
+										1262 км
+									</span>
+								</div>
+							</div>
+						</div>
+						<p class="top__card-desc">
+							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being
+							gorgeous with belly side up i could pee on this.
+						</p>
+						<a href="https://maps.app.goo.gl/9Bs8XtE5Cer2mJ5d6" target="_blank" class="top__card-more">
+							SEE MORE
+						</a>
+					</article>
+					<!-- BALTIC card end -->
 
 				</div>
 			</div>
 		</section>
 		<!-- Top end -->
-		
+
 		<!-- Videos start -->
-		<div class="videos" id="videos">
+		<!-- <section class="videos" id="videos">
 			<div class="videos__wrapper">
 				<div class="video__item"></div>
-				<iframe class="video__element" src="https://www.youtube.com/embed/00ZXaXIABMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="video__element" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div>
+		</section> -->
 		<!-- Videos end -->
 	</main>
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="footer__item">
-				<div class="footer__logo">
-					<img src="./img/svg/odigo-logo-footer.svg" alt="" class="footer__logo-pic">
+				<div class="header__logo">
+					<a href="/" class="header__logo-link">
+						<h1 class="header__logo-text">Portfolio</h1>
+					</a>
 				</div>
 				<nav class="footer__nav">
-					
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<h3 class="footer__menu-title">Company</h3>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">About </a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Team</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Careers</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Privacy Policy</a>
-						</li>
-					</ul>
-
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<h3 class="footer__menu-title">Locations</h3>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Tokyo</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Kyoto</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Kyoto</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#!" class="footer__menu-link">Kyoto</a>
-						</li>
-					</ul>
-
 					<ul class="footer__menu">
 						<li class="footer__menu-item">
 							<h3 class="footer__menu-title">Social media</h3>
@@ -481,6 +459,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./js/main.js"></script>
+	<script src="./js/main-es6.js"></script>
 </body>
+
 </html>
